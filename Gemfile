@@ -32,15 +32,15 @@ group :development, :test do
   gem 'rake', '>= 10.0.0'
   # Define `rake spec`.  Must be in development AND test so that its available by default as a rake test when the
   # environment is development
-  gem 'rspec-rails' , '~> 3.3'
+  gem 'rspec-rails' , '~> 3.5', '>= 3.5.0'
 end
 
 group :test do
   # cucumber extension for testing command line applications, like msfconsole
   gem 'aruba'
   # cucumber + automatic database cleaning with database_cleaner
-  gem 'cucumber-rails', :require => false
-  gem 'shoulda-matchers'
+  gem 'cucumber-rails', '>= 1.4.3', :require => false
+  gem 'shoulda-matchers', '>= 2.8.0'
   # Manipulate Time.now in specs
   gem 'timecop'
 end
