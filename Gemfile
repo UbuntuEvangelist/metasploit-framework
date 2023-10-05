@@ -25,21 +25,21 @@ end
 
 group :development, :test do
   # automatically include factories from spec/factories
-  gem 'factory_girl_rails', '~> 4.5.0'
+  gem 'factory_girl_rails', '~> 4.6.0'
   # Make rspec output shorter and more useful
   gem 'fivemat', '~> 1.3.1'
   # running documentation generation tasks and rspec tasks
   gem 'rake', '>= 10.0.0'
   # Define `rake spec`.  Must be in development AND test so that its available by default as a rake test when the
   # environment is development
-  gem 'rspec-rails' , '~> 3.3'
+  gem 'rspec-rails' , '~> 3.5', '>= 3.5.0'
 end
 
 group :test do
   # cucumber extension for testing command line applications, like msfconsole
   gem 'aruba'
   # cucumber + automatic database cleaning with database_cleaner
-  gem 'cucumber-rails', :require => false
+  gem 'cucumber-rails', '>= 1.4.3', :require => false
   gem 'shoulda-matchers'
   # Manipulate Time.now in specs
   gem 'timecop'
